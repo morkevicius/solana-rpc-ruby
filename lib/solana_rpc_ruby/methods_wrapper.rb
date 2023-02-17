@@ -1114,7 +1114,7 @@ module SolanaRpcRuby
       method =  create_method_name(__method__)
 
       params = []
-      params_hash = {}
+      params_hash = {"maxSupportedTransactionVersion": 0}
 
       params_hash['commitment'] = commitment unless blank?(commitment)
       params_hash['encoding'] = encoding unless blank?(encoding)
